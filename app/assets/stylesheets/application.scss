@@ -1,0 +1,337 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+
+ *{
+ 	font-family: 'Rubik', sans-serif;
+ }
+
+ body{
+ 	margin: 0;
+ 	padding:0;
+ 	/* background-color: #F4F4F4;*/
+ 	text-align: center;
+ }
+
+ /* grid bootstrap */
+/*
+[class*="col-"], footer {
+  background-color: lightgreen;
+  border: 2px solid black;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+}
+*/
+
+/* *****************
+** Navbar ** 
+******************* */
+
+.navbar.navbar-expand-lg.navbar-light{
+	background:white;
+	box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.28);
+}
+
+.nav-link{
+	/*color: white;*/
+}
+
+.navbar-brand{
+	/* color: white;
+	padding:0;*/
+}
+
+.logo-header{
+	width:20%;
+}
+
+/* *****************
+** Jumbotron ** 
+******************* */
+
+.jumbotron{
+	background-image: url("clothing-store.jpg");
+	height: 400px;
+	margin: 0;
+	/*padding-top: 300px;*/
+	background-position: center;
+	/* background-size: cover;*/
+	h1{
+		text-transform: uppercase;
+		color: white;
+		text-shadow: 0px 2px 3px black;
+		font-size: 4em;
+	}
+	p{
+		color: white;
+		text-shadow: 0px 2px 3px black;
+		font-size: 3em;
+	}
+}
+
+.jumbotron-center{
+	text-align:center;
+	/*background-color: rgba(243, 243, 243, 0.72);
+	padding: 2%;
+	width: 100%;*/
+}
+/* icon geoloc devant */
+.input-group-addon{
+	background-color: #539575;
+	border:none;
+	border:none;
+}
+
+/* icon geoloc */
+.fa.fa-map-marker{
+	color:white;
+	padding-right: 5px;
+}
+
+/* barre de recherche */
+.input-group{
+	width:40%;
+	margin:auto;
+}
+
+/* bouton localisez-moi ! */
+.btn.btn-success{
+	background-color: #539575;
+	border:none;
+	cursor: pointer;
+}
+.btn.btn-success:hover{
+	background-color: #3E8161;
+}
+
+.form-control{
+	border:none;
+}
+
+/* *****************
+** Concept ** 
+******************* */
+section.concept_bis{
+	/*background-color: lightsteelblue;*/
+	padding: 50px 0 0 0;
+}
+
+.image-concept{
+	width:50%;
+}
+
+.title1 > h3{
+	color: #404040;
+}
+
+.title1 > h4{
+	color:#3E8161;
+}
+
+.title-concept{
+	text-align: left;
+	color:#3E8161;
+}
+
+.text-concept{
+	text-align: left;
+	color: #717171;
+	font-size: 1.1em;
+}
+
+.icon-concept{
+	width:10%;
+}
+
+
+/*
+.title-concept-2{
+	text-align: right;
+	color #8492A6;
+}
+
+.text-concept-2{
+	text-align: right;
+	color #8492A6;
+}
+*/
+.image-concept{
+	width:100%;
+}
+
+/* *****************
+** Avis BIS** 
+******************* */
+
+section.avis_bis > .container{
+	padding-top: 30px;
+	border-top: 1px solid lightgrey;
+}
+
+section.avis_bis{
+	padding: 50px 0 0 0;
+}
+
+.nom_user_bis{
+	text-align: left;
+	color: #3E8161;
+}
+
+.avis_user_bis{
+	text-align: justify;
+	color:#717171;
+	margin-top: 15px;
+}
+
+.col-lg-4.bonjour{
+	border-radius: 0px 36px 0px 36px;
+	border:1px solid #ccd4df;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+.fa.fa-star{
+	color:#539575;
+}
+
+.aurevoir{
+	margin-top: 30px;
+}
+
+
+/* *****************
+** Avis ** 
+******************* */
+
+section.avis > .container{
+	padding-top: 30px;
+	border-top: 1px solid lightgrey;
+}
+
+section.avis{
+	padding: 50px 0 0 0;
+}
+
+.title2{
+	padding-bottom: 30px;
+	color: #404040;
+}
+
+.rounded-circle{
+	width:100%;
+	max-height: 100px;
+	box-shadow: 5px 5px 5px #656565;
+}
+
+.nom_user{
+	color: #3E8161;
+	padding-left: 35px;	
+}
+
+.avis_user{
+	text-align: justify;
+	color:#717171;
+	margin-top: 15px;
+}
+
+/* Star avec :hover */
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+.rating > span {
+	display: inline-block;
+	position: relative;
+	width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+	content: "\2605";
+	position: absolute;
+}
+
+/* *****************
+** Blog ** 
+******************* */
+
+section.blog > .container{
+	padding-top: 30px;
+	border-top: 1px solid lightgrey;
+}
+
+section.blog{
+	padding: 50px 0 0 0;
+}
+
+.title3{
+	padding-bottom: 30px;
+	color: #404040;
+}
+
+.blog_title{
+	color:#3E8161;
+}
+
+.blog_art{
+	text-align: justify;
+	color: #717171;
+}
+
+.suite_blog{
+	color:#539575;
+}
+
+.btn.btn-outline-info{
+	color:#539575;
+	border-color:#539575;
+}
+
+.btn.btn-outline-info:hover{
+	background-color:#3E8161;
+	color:#FFFFFF;
+}
+
+/* *****************
+** Convaincant ? ** 
+******************* */
+
+section.convaincant > .container{
+	padding-top: 30px;
+	border-top: 1px solid lightgrey;
+}
+
+section.convaincant{
+	padding: 50px 0 50px 0;
+}
+
+.title4{
+	color: #404040;
+}
+
+.btn.btn-primary{
+	background-color: #539575;
+	border:none;
+	cursor: pointer;
+}
+
+.btn.btn-primary:hover{
+	background-color: #3E8161;
+}
+
+/* *****************
+** Footer ** 
+******************* */
