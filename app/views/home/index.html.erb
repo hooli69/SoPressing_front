@@ -11,7 +11,7 @@
 							<!--<span class="input-group-addon"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></span>--> 
 							<input class="form-control" type="text"  placeholder="Entrez votre adresse...">
 							<span class="input-group-btn">
-								<button class="btn btn-success" type="button"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Localisez-moi !</button>
+								<button class="btn btn-success" type="button" id="ancre" ><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Localisez-moi !</button>
 							</span>
 						</div>
 					</div>
@@ -119,21 +119,21 @@
 					<div class="col-lg-4">
 						<div class="row align-items-center">
 							<div class="col-lg-6"><h5 class="nom_user">Keshia</h5></div>
-							<div class="col-lg-6"><%= image_tag ("user-f-2"), class: "rounded-circle" %></div>
+							<div class="col-6"><%= image_tag ("user-f-2"), class: "rounded-circle" %></div>
 						</div>
 						<p class="avis_user">Parfait pour comparer les prix lorsque l'on a de nombreuses chemises à nettoyer en même temps. Simple &amp; efficace, je recommande.</p>
 					</div>
 					<div class="col-lg-4"> 						
 						<div class="row align-items-center">
 							<div class="col-lg-6"><h5 class="nom_user">John-Rachid</h5></div>
-							<div class="col-lg-6"><%= image_tag ("user-yoman"), class: "rounded-circle" %></div>
+							<div class="col-6"><%= image_tag ("user-yoman"), class: "rounded-circle" %></div>
 						</div>			
 						<p class="avis_user">Cela faisait longtemps que je cherchais à faire nettoyer mes manteaux, mais manquant de temps, je n'avais pas comparé les différents pressings vers chez moi.</p>
 					</div>
 					<div class="col-lg-4">
 						<div class="row align-items-center">
 							<div class="col-lg-6"><h5 class="nom_user">Ursula</h5></div>
-							<div class="col-lg-6"><%= image_tag ("user-f-1"), class: "rounded-circle" %></div>
+							<div class="col-6"><%= image_tag ("user-f-1"), class: "rounded-circle" %></div>
 						</div>
 						<p class="avis_user">La possibilité de comparer et choisir le pressing utilisant des produits plus écolos a été un véritable bénédiction pour moi. Mes chemisiers vous remercient !</p>
 					</div>
@@ -197,11 +197,12 @@
 					<div class="offset-3 col-lg-6">
 						<h3 class="title4">Convaincant ? Essayez pour voir !</h3>
 						<br>
-						<button type="button" class="btn btn-primary" href="#ancre">Comparer les prix</button>
+						<a href="#ancre"><button type="button" class="btn btn-primary" href="#ancre">Comparer les prix</button></a>
 					</div>        
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 </body>
