@@ -69,8 +69,10 @@ html{
 ** Jumbotron ** 
 ******************* */
 
+//= depend_on_asset "clothing-store.jpg"
+
 .jumbotron{
-	background-image: url("/assets/clothing-store.jpg");
+	background-image: url('<%= asset_path("clothing-store.jpg") %>');
 	height: 400px;
 	margin: 0;
 	/*padding-top: 300px;*/
