@@ -16,3 +16,14 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
+/* Fonction scroll */
+$(document).ready(function(){
+    $('a[href^="#"]').on('click', function(evt){
+       evt.preventDefault(); 
+	var target = $(this).attr('href');
+	$('html, body')  
+       .stop()
+       .animate({scrollTop: $(target).offset().top}, 1000 );
+    });
+});
