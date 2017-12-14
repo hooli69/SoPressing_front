@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 # Use Devise for generating users
 gem 'devise'
+# Gmp location
+gem "geocoder"
+gem "gon"
 # gem ‘twitter’
 ################################################################################
 # Bootstrap & Jquery

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'select/index'
+
   get 'result/index'
 
   get 'home/index'
